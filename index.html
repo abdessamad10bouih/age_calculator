@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="inputs">
+        <label for="day">Day</label>
+        <input type="number" min="1" max="31" id="day" name="day" />
+
+        <input type="text" id="month2" style="display: none;">
+        <input type="text" id="date2" style="display: none;">
+        <input type="text" id="year2" style="display: none;">
+
+        <label id="months" for="month">month</label>
+        <input type="number" min="1" max="12" class="month" id="month" name="month" />
+
+        <label for="year">year</label>
+        <input type="number" class="year" id="year" name="year" />
+      </div>
+      <div class="button">
+        <button type="submit" class="btn" id="btn">↓</button>
+      </div>
+      <div class="resultat">
+        <h1><span id="yerres"></span>years</h1>
+        <h1><span id="monres"></span>months</h1>
+        <h1><span id="dayres"></span>days</h1>
+      </div>
+    </section>
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
